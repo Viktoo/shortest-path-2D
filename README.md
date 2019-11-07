@@ -1,7 +1,7 @@
-# shortest-path-2D
+# Shortest Path 2D
 Shortest path solutions for 2D arrays using Breadth-First Search (BFS) Algorithm and Dijkstra's Algorithm. Implemented in Python.
 
-# Setup
+## Setup
 
 On Mac/Linux:
 
@@ -11,32 +11,34 @@ On Windows:
 
 `.\\venv\\Scripts\\activate`
 
-# Usage
+## Usage
 
 `python unw.py` runs Breadth-First Search Algorithm (on stage 1 by default). Unweighted graphs only.
 
 `python w.py` runs Dijkstra's Algorithm (on stage 2 by default). Considers weighted edges.
 
 CSV files:
-Stage 1 - Original first stage (unweighted)
-Stage 2 - Original second stage (weighted)
-Stage 3 - Weighted edges with clear varying paths for testing.
-tiny.csv - A small 3x3 matrix on which my first iteration of Dijkstra's was built testing on.
+ - Stage 1 - Original first stage (unweighted)
+ - Stage 2 - Original second stage (weighted)
+ - Stage 3 - Weighted edges with clear varying paths for testing.
+ - tiny.csv - A small 3x3 matrix on which my first iteration of Dijkstra's was built testing on.
 
-# BFS Algorithm
+## BFS Algorithm
 
 The Breadth-First Search Algorithm explores nodes in layers. Take a node and explore all of its neighbors. Then take all the nodes you've seen, and explore all their neighbors, then take all those nodes, and so on. Time complexity `O(V+E)`.
 
 It's particularly useful for finding shortest path on an unweighted graph
 
-# Dijkstra's Algorithm
+## Dijkstra's Algorithm
 
 This is one of the most important algorithms in graph theory for finding shortest path. It is similar to BFS as it's exploring the nodes, with added functionality of utilizing a priority queue with distances(weights). Because of this, the graph must only contain _non-negative edge weights_. Single Source Shortest Path (SSSP) with time complexity `O(E*Log(V))`.
 
 Particularly useful for weighted graphs
 
+This is the pen-and-paper version of Dijkstra's if ran against tiny.csv
+![text]([https://public-demo-bucket.s3.amazonaws.com/demo/IMG_7669.jpg](https://public-demo-bucket.s3.amazonaws.com/demo/IMG_7669.jpg)
 
-# Optimization
+## Optimization
 
 The time complexity of Dijkstra's Algorithm gives it an advantage over BFS while expanding the functionality to include graphs with weighted edges. Dijkstra's can be used to replace BFS in this case.
 
