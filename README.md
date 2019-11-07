@@ -36,7 +36,7 @@ This is one of the most important algorithms in graph theory for finding shortes
 Particularly useful for weighted graphs
 
 This is the pen-and-paper version of Dijkstra's if ran against tiny.csv
-![text]([https://public-demo-bucket.s3.amazonaws.com/demo/IMG_7669.jpg](https://public-demo-bucket.s3.amazonaws.com/demo/IMG_7669.jpg)
+![text]([https://public-demo-bucket.s3.amazonaws.com/demo/IMG_7669.jpg](https://public-demo-bucket.s3.amazonaws.com/demo/IMG_7669.jpg))
 
 ## Optimization
 
